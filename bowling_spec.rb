@@ -15,5 +15,6 @@ describe 'bowling' do
   end
 
   it 'returns the score when you get a strike' do
+    expect(Bowling.score(['*', 5, 2])).to eq(24)
   end
 end
