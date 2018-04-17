@@ -8,11 +8,7 @@ class Bowling
 
   def self.remove_gutter_balls(rolls)
     new_rolls = rolls.map do |roll|
-      if roll == '-'
-        0
-      else
-        roll
-      end
+      roll == '-'? 0 : roll
     end
   end
 
